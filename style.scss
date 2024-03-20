@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+$font-family-sans-serif : "Montserrat", sans-serif;
+$navbar-nav-link-padding-x: 1.5rem;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+);
+
+@import "bootstrap/scss/bootstrap";
+
+.nav-link.active{
+    color:#fff!important;
+}
+
+// #about{
+//     clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
+//   }
+
+
+
+  /* proj  */
+
+.screen {
+    display: block;
+    // height: 350px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .screen img.proj-one {
+    bottom: -200px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 0;
+    margin:0;
+    padding:0;
+    -webkit-transition: top 11s;
+    -moz-transition: top 11s;
+    -ms-transition: top 11s;
+    -o-transition: top 11s;
+    transition: bottom 11s;
+    object-fit: cover;
+  }
+  
+  .screen img.proj-two {
+    bottom: -270px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 0;
+    margin:0;
+    padding:0;
+    -webkit-transition: top 11s;
+    -moz-transition: top 11s;
+    -ms-transition: top 11s;
+    -o-transition: top 11s;
+    transition: bottom 11s;
+    object-fit: cover;
+  }
+  
+  .screen img.proj-three {
+    bottom: -190px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 0;
+    margin:0;
+    padding:0;
+    -webkit-transition: top 11s;
+    -moz-transition: top 11s;
+    -ms-transition: top 11s;
+    -o-transition: top 11s;
+    transition: bottom 11s;
+    object-fit: cover;
+  }
+  
+  .screen img.proj-four {
+    bottom: -190px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 0;
+    margin:0;
+    padding:0;
+    -webkit-transition: top 11s;
+    -moz-transition: top 11s;
+    -ms-transition: top 11s;
+    -o-transition: top 11s;
+    transition: bottom 11s;
+    object-fit: cover;
+  }
+
+  
+  .screen:hover img {
+    bottom: 0;
+    -webkit-transition: all 8s;
+    -moz-transition: all 8s;
+    -ms-transition: all 8s;
+    -o-transition: all 8s;
+    transition: all 8s;
+  }
+
+//   active feature 
+nav ul li a.active {
+    font-weight: bold;
+}
+
+// button:focus{
+//     border-color: $primary;
+// }
+  
+  /* proj  */
+
+  @media only screen and (max-width: 768px) {
+
+    .navbar-collapse{
+        margin-top: 15px;
+    }
+
+    .navbar-nav .nav-link.active{
+        padding-left:  8px;
+        padding-right:  8px;
+
+    }
+    .screen{
+        min-height: 285px;
+        margin-bottom: 5px;
+      }
+      .screen img{
+        height: 100%;
+      }
+     
+      .screen img{ 
+        bottom: unset!important;
+      }
+
+      #contact,#proj,#skill,#about,#home{
+        margin-top: 0px!important;
+        margin-bottom: 0px!important;
+        padding-bottom: 0px!important;
+
+      }
+  }
